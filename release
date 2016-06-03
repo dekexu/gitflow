@@ -1,0 +1,14 @@
+#!/bin/bash
+ov=`cat VERSION`
+vl=(`cat VERSION | tr '.' ' '`)
+nv="${vl[0]}.$(( vl[1] + 1))"
+current_branch=`git rev-parse --abbrev-ref HEAD`
+if [ "$current_branch" == "dev" ]; then
+  read -p "Create a new release branch [$ov] -> [$nv]:" another
+fi
+if [ "$another" == "" ]; then
+  another=$nv
+fi
+another_l=(`echo $another | tr '.' ' '`)
+another="${another_l[0]}.${another_l[1]}.0"
+git checkout -b release-$another dev
