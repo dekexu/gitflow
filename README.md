@@ -1,6 +1,7 @@
 # Introduction
- This bumpversion script is implemented according to the [pete-otaqui's bumpversion.sh](https://gist.github.com/pete-otaqui/4188238 )
- and Vincent Driessen's [A Successful Git Branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+  This bumpversion script is implemented according to the [pete-otaqui's bumpversion.sh](https://gist.github.com/pete-otaqui/4188238)
+  and Vincent Driessen's [A Successful Git Branching model](http://nvie.com/posts/a-successful-git-branching-model/). Many thanks to their contribution.
+  This script is some modification based on [pete-otaqui's bumpversion.sh](https://gist.github.com/pete-otaqui/4188238)
 # Usage
   1. copy this two script into your project and in master branch
 
