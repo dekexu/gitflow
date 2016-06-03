@@ -3,10 +3,12 @@
  and Vincent Driessen's [A Successful Git Branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 # Usage
   1. copy this two script into your project and in master branch
+
     ```bash
     ./bumpversion # add VERSION and CHANGES to project
     ```
   2. when in dev
+
     ```bash
     ./bumpversion # will not exec script
     ./release     # will think that you want to create a new `release` branch
@@ -14,6 +16,7 @@
                   # default: increment(minor, 1), patch = 0
     ```
   3. when in release-major.minor.patch
+
     ```bash
     ./bumpverion  # exec when all work done, test fine, and ready to be merged to master and dev
     git push      # push the CHANGES and VERSION file
@@ -28,6 +31,7 @@
     git branch -d release-major.minor.patch # now you can delete the branch
     ```
   4. when in hotfix-major.minor.patch
+  
     ```
     ./bumpversion # exec when all work done, test fine, and ready to be merged to master and dev
                   # version changed
