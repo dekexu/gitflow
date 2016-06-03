@@ -1,5 +1,5 @@
 # Introduction
- This script is implemented according to the [pete-otaqui's bumpversion.sh](https://gist.github.com/pete-otaqui/4188238 )
+ This bumpversion script is implemented according to the [pete-otaqui's bumpversion.sh](https://gist.github.com/pete-otaqui/4188238 )
  and Vincent Driessen's [A Successful Git Branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 # Usage
   1. copy this two script into your project and in master branch
@@ -31,7 +31,7 @@
     git branch -d release-major.minor.patch # now you can delete the branch
     ```
   4. when in hotfix-major.minor.patch
-  
+
     ```
     ./bumpversion # exec when all work done, test fine, and ready to be merged to master and dev
                   # version changed
